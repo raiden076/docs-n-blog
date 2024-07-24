@@ -5,6 +5,7 @@ tags:
   - dev/web/portfolio/docs-n-blog
 title: docusaurus plugin - what it needs to do
 slug: 20240722213731-docusaurus-plugin---what-it-needs-to-do
+id: 20240722213731-docusaurus-plugin---what-it-needs-to-do
 ---
 
 ### In short: 

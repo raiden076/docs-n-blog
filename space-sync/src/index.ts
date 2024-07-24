@@ -3,6 +3,9 @@ import matter from 'gray-matter';
 import * as fs from 'fs-extra';
 import path from 'path';
 import { Plugin, LoadContext } from "@docusaurus/types"
+import { enableMapSet, produce } from "immer"
+
+enableMapSet()
 
 export interface MyPluginOptions {
   // this option will either be undefined or a boolean
@@ -20,7 +23,10 @@ export default async function (context: LoadContext, options: MyPluginOptions): 
         .action(async () => {
           await updateBlog(options.srcDir, context.siteDir);
           const tagMap = await updateDocs(options.srcDir, context.siteDir, context.baseUrl);
-          console.log("tagMap: ", tagMap);
+          // console.log("tagMap: ", tagMap);
+          const sidebar = convertTagMapToSidebar(tagMap);
+          console.log("generated sidebar:", JSON.stringify({ sidebar }, null, 2));
+          await fs.writeJson(path.join(context.siteDir, "sidebar.json"), { sidebar }, { spaces: 2 });
         })
     },
 
@@ -60,11 +66,15 @@ async function updateDocs(
       }
     }
 
-    const updatedFrontmatter: { title: string, slug: string } = {
+    const updatedFrontmatter: { title: string, slug: string, id: string } = {
       title: path.relative(sourcePath, file)
         .replace(/^\d+\s/, '')
         .replace(/\.md$/, ''),
       slug: path.relative(sourcePath, file)
+        .replace(/\.md$/, '')
+        .replace(/\s+/g, '-')
+        .toLowerCase(),
+      id: path.relative(sourcePath, file)
         .replace(/\.md$/, '')
         .replace(/\s+/g, '-')
         .toLowerCase(),
@@ -128,4 +138,101 @@ const convertObsidianLinks = (input: string, basePath: string): string => {
     const cleanedTitle = text.replace(/^\d+\s/, '');
     return `[${cleanedTitle}](${fullPath})`;
   });
+}
+
+
+/**
+ * Create an accessor object for accessing and manipulating nested objects.
+ * @param initialObject The initial object to create the accessor for.
+ * @returns An object with get, set, append, exportObject, and getNewKeys functions.
+ */
+const createAccessor = <T extends Record<string, any>>(initialObject: T): {
+  get: (path: string) => any;
+  set: (path: string, value: any) => void;
+  exportObject: () => T;
+  getNewKeys: () => Record<string, any>;
+} => {
+  const getPathArray = (path: string): string[] => path.split('/');
+  const accessor: {
+    get: (path: string) => any;
+    set: (path: string, value: any) => void;
+    exportObject: () => T;
+    getNewKeys: () => Record<string, any>;
+    newKeys: Record<string, any>;
+  } = {
+    get: (path: string) => {
+      return getPathArray(path).reduce((acc, part) => acc && acc[part] ? acc[part] : undefined, initialObject);
+    },
+    set: (path: string, value: any) => {
+      const pathParts = getPathArray(path);
+      let newKeyCreated = false;
+      pathParts.reduce((acc, part, index) => {
+        if (index === pathParts.length - 1) {
+          acc[part] = value;
+        } else {
+          if (!acc[part]) {
+            acc[part] = {};
+            newKeyCreated = true;
+          }
+          return acc[part];
+        }
+      }, initialObject);
+      if (newKeyCreated) {
+        accessor.newKeys[path] = value;
+      }
+    },
+    exportObject: () => {
+      return JSON.parse(JSON.stringify(initialObject));
+    },
+    getNewKeys: () => {
+      return accessor.newKeys;
+    },
+    newKeys: {}
+  };
+  return accessor;
+};
+
+
+
+/**
+ * Converts a tag map to a Docusaurus sidebar object.
+ * @param {Map<string, { name: string, files: string[] }>} tagMap - The tag map to convert
+ * @returns {{ [key: string]: string[] }} - The converted sidebar object
+ */
+const convertTagMapToSidebar = <T extends Record<string, { name: string, files: string[] }>>(
+  tagMap: Map<string, T[keyof T]>,
+): { [key: string]: any } => {
+  let sidebar: { [key: string]: string[] } = {};
+  const accessor = createAccessor(sidebar);
+  tagMap.forEach((tag) => {
+    const fileSlugs = tag.files.map(file =>
+      path.basename(file).replace(/\.md$/, '')
+        .replace(/\s+/g, '-')
+        .toLowerCase(),);
+    accessor.set(tag.name, [accessor.get(tag.name), ...fileSlugs])
+  });
+  const sidebarWithNulls = accessor.exportObject();
+  return removeNulls(sidebarWithNulls) as { [key: string]: any };
+}
+
+
+/**
+ * Recursively removes null values from an object or array.
+ * @param obj - The object or array to clean.
+ * @returns The cleaned object or array.
+ */
+function removeNulls(obj: any[] | Record<string, any> | null): any[] | Record<string, any> | null {
+  if (Array.isArray(obj)) {
+    return obj.filter(item => item !== null).map(removeNulls);
+  } else if (typeof obj === 'object' && obj !== null) {
+    const cleanedObj: Record<string, any> = {};
+    Object.keys(obj).forEach(key => {
+      const value = obj[key];
+      if (value !== null) {
+        cleanedObj[key] = removeNulls(value);
+      }
+    });
+    return cleanedObj;
+  }
+  return obj;
 }

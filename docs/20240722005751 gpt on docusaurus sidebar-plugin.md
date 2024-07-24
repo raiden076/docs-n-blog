@@ -6,6 +6,7 @@ tags:
   - by_ai
 title: gpt on docusaurus sidebar-plugin
 slug: 20240722005751-gpt-on-docusaurus-sidebar-plugin
+id: 20240722005751-gpt-on-docusaurus-sidebar-plugin
 ---
 
 Creating a plugin for Docusaurus to handle dynamic sidebar generation based on tags is a great idea. This approach offers a more integrated solution and keeps your project neatly organized within the Docusaurus ecosystem. Here’s a step-by-step guide on how you might develop such a plugin:

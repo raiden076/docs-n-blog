@@ -1,0 +1,58 @@
+{
+  "sidebar": {
+    "test": {
+      "1": [
+        "20240721151922-test-note"
+      ]
+    },
+    "dev": {
+      "web": {
+        "portfolio": [
+          {
+            "docs-n-blog": [
+              "20240722005751-gpt-on-docusaurus-sidebar-plugin",
+              "20240722213731-docusaurus-plugin---what-it-needs-to-do",
+              "20240723003043-docusaurus-plugin---an-even-better-plan",
+              "20240723122006-docusaurus-plugin---an-even-better-plan-ctd",
+              "20240724133308-tagmap-and-enhanced-sidebar"
+            ]
+          },
+          "20240724204239-portfolio-hosting---cloudflare-down"
+        ]
+      }
+    },
+    "docusaurus": {
+      "plugin": [
+        "20240722005751-gpt-on-docusaurus-sidebar-plugin",
+        "20240722213731-docusaurus-plugin---what-it-needs-to-do",
+        "20240723003043-docusaurus-plugin---an-even-better-plan",
+        "20240723122006-docusaurus-plugin---an-even-better-plan-ctd",
+        "20240724133308-tagmap-and-enhanced-sidebar",
+        "20240722144345-integration-of-docusaurus-and-obsidian-vault"
+      ],
+      "sidebar": [
+        "20240722005751-gpt-on-docusaurus-sidebar-plugin",
+        "20240722160139-docs-sidebar---what-to-do",
+        "20240722213731-docusaurus-plugin---what-it-needs-to-do",
+        "20240723003043-docusaurus-plugin---an-even-better-plan",
+        "20240723122006-docusaurus-plugin---an-even-better-plan-ctd",
+        "20240724133308-tagmap-and-enhanced-sidebar",
+        "20240722144345-integration-of-docusaurus-and-obsidian-vault"
+      ]
+    },
+    "by_ai": [
+      "20240722005751-gpt-on-docusaurus-sidebar-plugin"
+    ],
+    "obsidian": {
+      "tags": [
+        "20240722160139-docs-sidebar---what-to-do",
+        "20240722144345-integration-of-docusaurus-and-obsidian-vault"
+      ]
+    },
+    "cloudflare": {
+      "pages": [
+        "20240724204239-portfolio-hosting---cloudflare-down"
+      ]
+    }
+  }
+}

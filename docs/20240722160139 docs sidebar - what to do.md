@@ -4,6 +4,7 @@ tags:
   - obsidian/tags
 title: docs sidebar - what to do
 slug: 20240722160139-docs-sidebar---what-to-do
+id: 20240722160139-docs-sidebar---what-to-do
 ---
 
 So, after processing, we'll have this  key: id, value: {name: doc name, tags: (all, including nested)}

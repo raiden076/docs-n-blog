@@ -5,6 +5,7 @@ tags:
   - obsidian/tags
 title: Integration of docusaurus and obsidian vault
 slug: 20240722144345-integration-of-docusaurus-and-obsidian-vault
+id: 20240722144345-integration-of-docusaurus-and-obsidian-vault
 ---
 Done until now:
 1. Creation of vault

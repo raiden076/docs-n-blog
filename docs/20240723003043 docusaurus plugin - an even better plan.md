@@ -5,6 +5,7 @@ tags:
   - dev/web/portfolio/docs-n-blog
 title: docusaurus plugin - an even better plan
 slug: 20240723003043-docusaurus-plugin---an-even-better-plan
+id: 20240723003043-docusaurus-plugin---an-even-better-plan
 ---
 Continuing from [docusaurus plugin - what it needs to do](/docs/20240722213731-docusaurus-plugin---what-it-needs-to-do)
 

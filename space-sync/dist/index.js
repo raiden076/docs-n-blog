@@ -40,6 +40,8 @@ const glob_1 = __importDefault(require("glob"));
 const gray_matter_1 = __importDefault(require("gray-matter"));
 const fs = __importStar(require("fs-extra"));
 const path_1 = __importDefault(require("path"));
+const immer_1 = require("immer");
+(0, immer_1.enableMapSet)();
 function default_1(context, options) {
     return __awaiter(this, void 0, void 0, function* () {
         return {
@@ -52,7 +54,10 @@ function default_1(context, options) {
                     .action(() => __awaiter(this, void 0, void 0, function* () {
                     yield updateBlog(options.srcDir, context.siteDir);
                     const tagMap = yield updateDocs(options.srcDir, context.siteDir, context.baseUrl);
-                    console.log("tagMap: ", tagMap);
+                    // console.log("tagMap: ", tagMap);
+                    const sidebar = convertTagMapToSidebar(tagMap);
+                    console.log("generated sidebar:", JSON.stringify({ sidebar }, null, 2));
+                    yield fs.writeJson(path_1.default.join(context.siteDir, "sidebar.json"), { sidebar }, { spaces: 2 });
                 }));
             },
         };
@@ -91,6 +96,10 @@ function updateDocs(sourceDirectory, destinationDirectory, baseUrl) {
                     .replace(/^\d+\s/, '')
                     .replace(/\.md$/, ''),
                 slug: path_1.default.relative(sourcePath, file)
+                    .replace(/\.md$/, '')
+                    .replace(/\s+/g, '-')
+                    .toLowerCase(),
+                id: path_1.default.relative(sourcePath, file)
                     .replace(/\.md$/, '')
                     .replace(/\s+/g, '-')
                     .toLowerCase(),
@@ -144,3 +153,81 @@ const convertObsidianLinks = (input, basePath) => {
         return `[${cleanedTitle}](${fullPath})`;
     });
 };
+/**
+ * Create an accessor object for accessing and manipulating nested objects.
+ * @param initialObject The initial object to create the accessor for.
+ * @returns An object with get, set, append, exportObject, and getNewKeys functions.
+ */
+const createAccessor = (initialObject) => {
+    const getPathArray = (path) => path.split('/');
+    const accessor = {
+        get: (path) => {
+            return getPathArray(path).reduce((acc, part) => acc && acc[part] ? acc[part] : undefined, initialObject);
+        },
+        set: (path, value) => {
+            const pathParts = getPathArray(path);
+            let newKeyCreated = false;
+            pathParts.reduce((acc, part, index) => {
+                if (index === pathParts.length - 1) {
+                    acc[part] = value;
+                }
+                else {
+                    if (!acc[part]) {
+                        acc[part] = {};
+                        newKeyCreated = true;
+                    }
+                    return acc[part];
+                }
+            }, initialObject);
+            if (newKeyCreated) {
+                accessor.newKeys[path] = value;
+            }
+        },
+        exportObject: () => {
+            return JSON.parse(JSON.stringify(initialObject));
+        },
+        getNewKeys: () => {
+            return accessor.newKeys;
+        },
+        newKeys: {}
+    };
+    return accessor;
+};
+/**
+ * Converts a tag map to a Docusaurus sidebar object.
+ * @param {Map<string, { name: string, files: string[] }>} tagMap - The tag map to convert
+ * @returns {{ [key: string]: string[] }} - The converted sidebar object
+ */
+const convertTagMapToSidebar = (tagMap) => {
+    let sidebar = {};
+    const accessor = createAccessor(sidebar);
+    tagMap.forEach((tag) => {
+        const fileSlugs = tag.files.map(file => path_1.default.basename(file).replace(/\.md$/, '')
+            .replace(/\s+/g, '-')
+            .toLowerCase());
+        accessor.set(tag.name, [accessor.get(tag.name), ...fileSlugs]);
+    });
+    const sidebarWithNulls = accessor.exportObject();
+    return removeNulls(sidebarWithNulls);
+};
+/**
+ * Recursively removes null values from an object or array.
+ * @param obj - The object or array to clean.
+ * @returns The cleaned object or array.
+ */
+function removeNulls(obj) {
+    if (Array.isArray(obj)) {
+        return obj.filter(item => item !== null).map(removeNulls);
+    }
+    else if (typeof obj === 'object' && obj !== null) {
+        const cleanedObj = {};
+        Object.keys(obj).forEach(key => {
+            const value = obj[key];
+            if (value !== null) {
+                cleanedObj[key] = removeNulls(value);
+            }
+        });
+        return cleanedObj;
+    }
+    return obj;
+}

@@ -5,6 +5,7 @@ tags:
   - dev/web/portfolio/docs-n-blog
 title: docusaurus plugin - an even better plan ctd
 slug: 20240723122006-docusaurus-plugin---an-even-better-plan-ctd
+id: 20240723122006-docusaurus-plugin---an-even-better-plan-ctd
 ---
 
 From [docusaurus plugin - an even better plan](/docs/20240723003043-docusaurus-plugin---an-even-better-plan)
