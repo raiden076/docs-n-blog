@@ -2,7 +2,7 @@
 tags:
   - docusaurus/plugin
   - docusaurus/sidebar
-  - dev/web/portfolio
+  - dev/web/portfolio/docs-n-blog
 title: docusaurus plugin - what it needs to do
 slug: 20240722213731-docusaurus-plugin---what-it-needs-to-do
 ---

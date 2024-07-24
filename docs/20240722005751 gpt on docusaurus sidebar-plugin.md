@@ -1,6 +1,6 @@
 ---
 tags:
-  - dev/web/portfolio
+  - dev/web/portfolio/docs-n-blog
   - docusaurus/plugin
   - docusaurus/sidebar
   - by_ai

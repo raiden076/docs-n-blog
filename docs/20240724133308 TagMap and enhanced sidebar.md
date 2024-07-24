@@ -1,8 +1,8 @@
 ---
 tags:
-  - dev/web/portfolio
   - docusaurus/sidebar
   - docusaurus/plugin
+  - dev/web/portfolio/docs-n-blog
 title: TagMap and enhanced sidebar
 slug: 20240724133308-tagmap-and-enhanced-sidebar
 ---

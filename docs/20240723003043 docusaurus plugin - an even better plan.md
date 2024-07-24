@@ -1,8 +1,8 @@
 ---
 tags:
-  - dev/web/portfolio
   - docusaurus/plugin
   - docusaurus/sidebar
+  - dev/web/portfolio/docs-n-blog
 title: docusaurus plugin - an even better plan
 slug: 20240723003043-docusaurus-plugin---an-even-better-plan
 ---

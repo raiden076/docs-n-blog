@@ -1,8 +1,8 @@
 ---
 tags:
-  - dev/web/portfolio
   - docusaurus/plugin
   - docusaurus/sidebar
+  - dev/web/portfolio/docs-n-blog
 title: docusaurus plugin - an even better plan ctd
 slug: 20240723122006-docusaurus-plugin---an-even-better-plan-ctd
 ---
