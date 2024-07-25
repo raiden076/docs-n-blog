@@ -11,15 +11,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://notes-n-blog.arkaprav0.in',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  // organizationName: 'facebook', // Usually your GitHub org/user name.
+  // projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -32,11 +32,13 @@ const config: Config = {
     locales: ['en'],
   },
   plugins: [
-    ['./space-sync/dist',
+    [
+      './space-sync/dist',
       {
         srcDir: './space',
-      }
-    ]
+      },
+    ],
+    // '@orama/plugin-docusaurus-v3',
   ],
 
   presets: [
@@ -45,6 +47,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          routeBasePath: 'notes',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -73,7 +76,7 @@ const config: Config = {
       },
     },
     navbar: {
-      title: 'Docs-n-blog',
+      title: 'notes-n-blog',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -81,9 +84,10 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'notesSidebar',
           position: 'left',
-          label: 'Docs',
+          label: 'Notes',
+          // to: '/docs/20240725141633-why---when---how',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
@@ -97,28 +101,28 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Notes',
           items: [
             {
-              label: 'Docs',
-              to: '/docs/intro',
+              label: 'Notes',
+              to: '/notes/20240725141633-why---when---how',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Socials',
           items: [
+            // {
+            //   label: 'Stack Overflow',
+            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+            // },
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Github',
+              href: 'https://github.com/raiden076',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/arkaprav0',
             },
           ],
         },
@@ -130,8 +134,8 @@ const config: Config = {
               to: '/blog',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Check out the source code',
+              href: 'https://github.com/raiden076/docs-n-blog',
             },
           ],
         },

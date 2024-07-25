@@ -50,7 +50,7 @@ async function updateDocs(
 
   const sourcePath: string = path.join(sourceDirectory, "src");
   const destinationPath: string = path.join(destinationDirectory, "docs");
-  const baseUrlPath: string = path.join(baseUrl, "docs");
+  const baseUrlPath: string = path.join(baseUrl, "notes");
   const markdownFiles: string[] = glob.sync(path.join(sourcePath, "/**/*.md"));
   const tagMap: Map<string, { name: string, files: string[] }> = new Map<string, { name: string, files: string[] }>();
 

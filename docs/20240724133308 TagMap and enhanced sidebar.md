@@ -59,12 +59,12 @@ tagMap:  Map(6) {
 }
 ```
 
-Already sorted, and ready to be converted to sidebar, continuing from [docusaurus plugin - an even better plan ctd](/docs/20240723122006-docusaurus-plugin---an-even-better-plan-ctd)
+Already sorted, and ready to be converted to sidebar, continuing from [docusaurus plugin - an even better plan ctd](/notes/20240723122006-docusaurus-plugin---an-even-better-plan-ctd)
 
 Notes and checklist:
 - [x] Change file names to proper docusaurus links ✅ 2024-07-24
-- [ ] Break nested tags into category structure 🔺 
-- [ ] After breaking them down, push appropriate doc into appropriate nested category
+- [x] Break nested tags into category structure 🔺 ✅ 2024-07-25
+- [x] After breaking them down, push appropriate doc into appropriate nested category ✅ 2024-07-25
 
 
 ### Break nested tags, and convert to folder, how?
@@ -127,3 +127,5 @@ const createAccessor = (obj) => {
 };
 
 ```
+
+Done.

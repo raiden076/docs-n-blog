@@ -1,7 +1,7 @@
 ---
 tags:
   - dev/web/portfolio
-  - cloudflare/pages
+  - dev/web/cloudflare/pages
 title: portfolio hosting - cloudflare down
 slug: 20240724204239-portfolio-hosting---cloudflare-down
 id: 20240724204239-portfolio-hosting---cloudflare-down

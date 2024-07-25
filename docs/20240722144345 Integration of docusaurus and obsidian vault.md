@@ -20,7 +20,7 @@ Left
 So todos, now, 
 - [x] Read more about docu sidebar ✅ 2024-07-22
 - [x] Read more about docu plugins ✅ 2024-07-23
-- [x] Read more from [gpt on docusaurus sidebar-plugin](/docs/20240722005751-gpt-on-docusaurus-sidebar-plugin) ✅ 2024-07-23
+- [x] Read more from [gpt on docusaurus sidebar-plugin](/notes/20240722005751-gpt-on-docusaurus-sidebar-plugin) ✅ 2024-07-23
 - [x] Create submodule, import ✅ 2024-07-23
 - [x] Start planning then executing mapping ✅ 2024-07-23
 
@@ -49,7 +49,7 @@ In the build script {the npm script} will
 		1. Read 1st 5 line max
 		2. Write necessary metadata (like `sidebar_label` , ) ***{ [Metadata API](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter) }***
 		3. Create a key value pair for each document key: id, value: {name: doc name, tags: (all, including nested)}
-	3. From the nested tags () -> sidebar folder structure (inside links can be repeated, but files are not) ***{ [docs sidebar - what to do](/docs/20240722160139-docs-sidebar---what-to-do) }***
+	3. From the nested tags () -> sidebar folder structure (inside links can be repeated, but files are not) ***{ [docs sidebar - what to do](/notes/20240722160139-docs-sidebar---what-to-do) }***
 	4. Spew out sidebar.json
 3. I don't need any plugins, not yet anyway
 
