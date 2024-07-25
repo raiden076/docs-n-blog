@@ -7,7 +7,7 @@ title: docusaurus plugin - an even better plan
 slug: 20240723003043-docusaurus-plugin---an-even-better-plan
 id: 20240723003043-docusaurus-plugin---an-even-better-plan
 ---
-Continuing from [docusaurus plugin - what it needs to do](/notes/20240722213731-docusaurus-plugin---what-it-needs-to-do)
+Continuing from [docusaurus plugin - what it needs to do](/note/20240722213731-docusaurus-plugin---what-it-needs-to-do)
 
 What it needs to do can stay the same, what if instead of this all shenanigans, just create another cli command easy, 
 It will, do,
@@ -21,6 +21,6 @@ Just as what described,
 - [x] On "docu sync", plan, now, read carefully: ✅ 2024-07-23
 	1. Import from source to target (src more imp, also blog)
 	2. ....
-	3. Create and place the sidebar ***[TagMap and enhanced sidebar](/notes/20240724133308-tagmap-and-enhanced-sidebar)***
+	3. Create and place the sidebar ***[TagMap and enhanced sidebar](/note/20240724133308-tagmap-and-enhanced-sidebar)***
 	4. Load files in appropriate locations
 - [x] Execute above ✅ 2024-07-24

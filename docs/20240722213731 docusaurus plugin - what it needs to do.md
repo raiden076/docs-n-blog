@@ -16,7 +16,7 @@ id: 20240722213731-docusaurus-plugin---what-it-needs-to-do
 5. Alter obsidian backlinks to appropriate docusaurus links
 6. Write the files
 7. Create the tags dictionary ( key: id, value: {name: doc name, tags: (all, including nested)} )
-8. Create and place the sidebar file ***[TagMap and enhanced sidebar](/notes/20240724133308-tagmap-and-enhanced-sidebar)***
+8. Create and place the sidebar file ***[TagMap and enhanced sidebar](/note/20240724133308-tagmap-and-enhanced-sidebar)***
 9. Load the files in destination directory
 
 

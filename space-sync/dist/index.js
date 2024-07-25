@@ -76,7 +76,7 @@ function updateDocs(sourceDirectory, destinationDirectory, baseUrl) {
         console.log(`Updating Markdown files in ${sourceDirectory}`);
         const sourcePath = path_1.default.join(sourceDirectory, "src");
         const destinationPath = path_1.default.join(destinationDirectory, "docs");
-        const baseUrlPath = path_1.default.join(baseUrl, "notes");
+        const baseUrlPath = path_1.default.join(baseUrl, "note");
         const markdownFiles = glob_1.default.sync(path_1.default.join(sourcePath, "/**/*.md"));
         const tagMap = new Map();
         const promises = markdownFiles.map((file) => __awaiter(this, void 0, void 0, function* () {

@@ -3,15 +3,15 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'All my notes and a few blog',
+  tagline: 'Because? #open_source_everything',
   favicon: 'img/favicon.ico',
   markdown: {
     format: 'md',
   },
 
   // Set the production url of your site here
-  url: 'https://notes-n-blog.arkaprav0.in',
+  url: 'https://notes.arkaprav0.in',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -22,7 +22,7 @@ const config: Config = {
   // projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -47,7 +47,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          routeBasePath: 'notes',
+          routeBasePath: 'note',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -69,6 +69,11 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     image: 'img/docusaurus-social-card.jpg',
     docs: {
       sidebar: {
@@ -76,10 +81,10 @@ const config: Config = {
       },
     },
     navbar: {
-      title: 'notes-n-blog',
+      title: 'notes & blog',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/undraw_small_town_re_7mcn.svg',
       },
       items: [
         {
@@ -92,20 +97,20 @@ const config: Config = {
         { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://arkaprav0.in/',
-          label: 'Portfolio',
+          label: '🎤 arkaprav0.in',
           position: 'left',
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Notes',
           items: [
             {
               label: 'Notes',
-              to: '/notes/20240725141633-why---when---how',
+              to: '/note/20240725141633-why---when---how',
             },
           ],
         },

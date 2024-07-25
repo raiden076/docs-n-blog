@@ -59,7 +59,7 @@ tagMap:  Map(6) {
 }
 ```
 
-Already sorted, and ready to be converted to sidebar, continuing from [docusaurus plugin - an even better plan ctd](/notes/20240723122006-docusaurus-plugin---an-even-better-plan-ctd)
+Already sorted, and ready to be converted to sidebar, continuing from [docusaurus plugin - an even better plan ctd](/note/20240723122006-docusaurus-plugin---an-even-better-plan-ctd)
 
 Notes and checklist:
 - [x] Change file names to proper docusaurus links ✅ 2024-07-24

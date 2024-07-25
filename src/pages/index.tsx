@@ -13,14 +13,14 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          <em>{siteConfig.title}</em>
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle"><em>{siteConfig.tagline}</em></p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/notes/20240725141633-why---when---how">
-            why this? 🗿
+            to="/note/20240725141633-why---when---how">
+            still, why all this? 🗿
           </Link>
         </div>
       </div>

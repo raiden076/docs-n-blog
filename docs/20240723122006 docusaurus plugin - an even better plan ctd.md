@@ -8,7 +8,7 @@ slug: 20240723122006-docusaurus-plugin---an-even-better-plan-ctd
 id: 20240723122006-docusaurus-plugin---an-even-better-plan-ctd
 ---
 
-From [docusaurus plugin - an even better plan](/notes/20240723003043-docusaurus-plugin---an-even-better-plan)
+From [docusaurus plugin - an even better plan](/note/20240723003043-docusaurus-plugin---an-even-better-plan)
 ### More things to take care for:
 1. ~~Convert backlinks into proper links for docusaurus. (can be done later)~~
 2. Show tags into the docs itself in docusaurus (same as abve, for later), and with appropriate ui/ux
@@ -26,4 +26,4 @@ From [docusaurus plugin - an even better plan](/notes/20240723003043-docusaurus-
 - [x] Copy the blog ✅ 2024-07-25
 - [x] Use the tags dictionary to create the sidebar file ✅ 2024-07-25
 	- [x] ... Plan later, after above is done ✅ 2024-07-24
-	- [x] [TagMap and enhanced sidebar](/notes/20240724133308-tagmap-and-enhanced-sidebar) ✅ 2024-07-25
+	- [x] [TagMap and enhanced sidebar](/note/20240724133308-tagmap-and-enhanced-sidebar) ✅ 2024-07-25

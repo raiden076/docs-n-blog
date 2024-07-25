@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
+
 
 type FeatureItem = {
   title: string;
@@ -10,18 +12,20 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'zettelkasten notes',
+    Svg: require('@site/static/img/undraw_happy_music_g6wc.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        to tame my <em>extremely disorganized brain</em>. <Link to={'/note/20240725141633-why---when---how'}>
+          They might be interesting,
+          so have a look
+        </Link>
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'A few and far blogs',
+    Svg: require('@site/static/img/undraw_barista_qd50.svg').default,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -30,8 +34,8 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'checkout the main portfolio',
+    Svg: require('@site/static/img/undraw_applications_mqwk.svg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -41,7 +45,7 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
