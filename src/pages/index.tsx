@@ -37,9 +37,6 @@ export default function Home(): JSX.Element {
       description="All my notes and a few blog">
       <HomepageHeader />
       <main>
-        <Head>
-          <meta property='og:image' content='/img/undraw_Personal_notebook_re_d7dc.png' />
-        </Head>
         <HomepageFeatures />
       </main>
     </Layout>

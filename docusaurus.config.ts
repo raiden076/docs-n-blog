@@ -74,7 +74,7 @@ const config: Config = {
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/undraw_Personal_notebook_re_d7dc.png',
     docs: {
       sidebar: {
         autoCollapseCategories: true,
@@ -84,7 +84,7 @@ const config: Config = {
     navbar: {
       title: 'notes & blog',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'My Personal Castle',
         src: 'img/undraw_small_town_re_7mcn.svg',
       },
       items: [
@@ -131,9 +131,13 @@ const config: Config = {
               href: 'https://github.com/raiden076',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/arkaprav0',
+              label: 'X',
+              href: 'https://x.com/arkaprav0',
             },
+            {
+              label: 'Instagram',
+              href: 'https://www.instagram.com/arkaprav0',
+            }
           ],
         },
         {
