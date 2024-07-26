@@ -7,8 +7,8 @@ id: 20240726010711-docs-&-blog---immediate-improvements-can-be-made
 ---
 1. [ ] On start page change the rest two 
 2. [ ] remove test notes, intro, (and other old ones)* *can be done later
-3. [ ] change subdomain
-4. [ ] push latest changes
+3. [x] change subdomain ✅ 2024-07-26
+4. [x] push latest changes ✅ 2024-07-26
 5. [ ] check out if sidebar style can be changed (categories bolder than notes, make notes less bold)
 6. [ ] plan and fix footer
 		1. Three categories
@@ -18,3 +18,4 @@ id: 20240726010711-docs-&-blog---immediate-improvements-can-be-made
 		5. More:
 			1. Main portfolio
 			2. Checkout source code
+7. Add copyright info and year

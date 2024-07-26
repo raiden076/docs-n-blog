@@ -3,9 +3,6 @@ import matter from 'gray-matter';
 import * as fs from 'fs-extra';
 import path from 'path';
 import { Plugin, LoadContext } from "@docusaurus/types"
-import { enableMapSet, produce } from "immer"
-
-enableMapSet()
 
 export interface MyPluginOptions {
   // this option will either be undefined or a boolean
@@ -146,17 +143,17 @@ const convertObsidianLinks = (input: string, basePath: string): string => {
  * @param initialObject The initial object to create the accessor for.
  * @returns An object with get, set, append, exportObject, and getNewKeys functions.
  */
-const createAccessor = <T extends Record<string, any>>(initialObject: T): {
+const createAccessor = (initialObject: Record<string, any>): {
   get: (path: string) => any;
   set: (path: string, value: any) => void;
-  exportObject: () => T;
+  exportObject: () => Record<string, any>;
   getNewKeys: () => Record<string, any>;
 } => {
   const getPathArray = (path: string): string[] => path.split('/');
   const accessor: {
     get: (path: string) => any;
     set: (path: string, value: any) => void;
-    exportObject: () => T;
+    exportObject: () => Record<string, any>;
     getNewKeys: () => Record<string, any>;
     newKeys: Record<string, any>;
   } = {

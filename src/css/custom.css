@@ -32,23 +32,24 @@
 
 /* Default theme with shades of bright yellow */
 :root {
-  --ifm-color-primary: #ffdd57;
+  --ifm-color-primary: #ffd700;
   /* primary yellow */
-  --ifm-color-primary-dark: #fcd036;
+  --ifm-color-primary-dark: #e6c200;
   /* slightly darker yellow */
-  --ifm-color-primary-darker: #f7c600;
+  --ifm-color-primary-darker: #ccac00;
   /* dark yellow */
-  --ifm-color-primary-darkest: #dbb300;
+  --ifm-color-primary-darkest: #b39900;
   /* darkest yellow */
-  --ifm-color-primary-light: #ffe570;
+  --ifm-color-primary-light: #ffdb4d;
   /* lighter yellow */
-  --ifm-color-primary-lighter: #ffec89;
+  --ifm-color-primary-lighter: #ffe066;
   /* even lighter yellow */
-  --ifm-color-primary-lightest: #fff4a3;
+  --ifm-color-primary-lightest: #ffe680;
   /* lightest yellow */
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.3);
+
 }
+
 
 /* Dark theme with shades of bright yellow */
 [data-theme='dark'] {
@@ -67,4 +68,22 @@
   --ifm-color-primary-lightest: #fff4a3;
   /* lightest yellow */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* src/css/custom.css */
+
+/* Categories */
+.theme-doc-sidebar-item-category {
+  font-weight: bold;
+  /* Keep categories bold */
+  font-size: 1rem;
+  /* Adjust font size if needed */
+}
+
+/* Document links */
+.theme-doc-sidebar-item-link {
+  font-weight: normal;
+  /* Reduce font thickness for docs */
+  font-size: 0.93rem;
+  /* Adjust font size if needed */
 }

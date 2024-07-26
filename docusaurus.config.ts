@@ -106,12 +106,16 @@ const config: Config = {
       style: 'light',
       links: [
         {
-          title: 'Notes',
+          title: 'Here',
           items: [
             {
               label: 'Notes',
               to: '/note/20240725141633-why---when---how',
             },
+            {
+              label: 'Blog',
+              to: '/blog',
+            }
           ],
         },
         {
@@ -135,17 +139,17 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'Check out the source code',
               href: 'https://github.com/raiden076/docs-n-blog',
             },
+            {
+              label: 'My main portfolio',
+              href: 'https://arkaprav0.in',
+            }
           ],
         },
       ],
-      copyright: `Made with ❤️ in India`,
+      copyright: `Made with ❤️ in India © ${new Date().getFullYear()} Arkapravo Das`,
     },
     prism: {
       theme: prismThemes.github,

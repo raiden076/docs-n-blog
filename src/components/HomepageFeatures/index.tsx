@@ -17,8 +17,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         to tame my <em>extremely disorganized brain</em>. <Link to={'/note/20240725141633-why---when---how'}>
-          They might be interesting,
-          so have a look
+          They might be interesting, have a look
         </Link>
       </>
     ),
@@ -28,18 +27,20 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_barista_qd50.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        I don't like writing long boring articles, that much. But, <Link to={'/blog'}>
+          if there is an interesting enough topic, have a look, here
+        </Link>
       </>
     ),
   },
   {
-    title: 'checkout the main portfolio',
+    title: 'check out the main portfolio',
     Svg: require('@site/static/img/undraw_applications_mqwk.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <Link to={'https://arkaprav0.in'}>Here</Link>, is my main portfolio. <Link to={'https://arkaprav0.in'}>
+          Check it out, you'll also find projects I have worked on.
+        </Link>
       </>
     ),
   },
