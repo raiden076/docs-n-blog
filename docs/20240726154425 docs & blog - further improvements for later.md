@@ -5,7 +5,7 @@ title: docs & blog - further improvements for later
 slug: 20240726154425-docs-&-blog---further-improvements-for-later
 id: 20240726154425-docs-&-blog---further-improvements-for-later
 ---
-1. [ ] add more social links
+1. [x] add more social links ✅ 2024-07-27
 2. [ ] plan out and read more about blogs
 3. [ ] write some blogs at least
 4. [ ] remove test blogs

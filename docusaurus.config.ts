@@ -38,7 +38,7 @@ const config: Config = {
         srcDir: './space',
       },
     ],
-    // '@orama/plugin-docusaurus-v3',
+    '@docusaurus/plugin-ideal-image'
   ],
 
   presets: [
