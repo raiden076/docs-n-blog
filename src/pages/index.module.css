@@ -21,3 +21,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.crimsonText {
+  color: #fc7b93;
+}
+
+.blackText {
+  color: black;
+}

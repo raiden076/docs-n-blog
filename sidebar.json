@@ -19,11 +19,15 @@
             ]
           },
           "20240724204239-portfolio-hosting---cloudflare-down",
-          "20240726160545-portfolio---start-customization"
+          "20240726160545-portfolio---start-customization",
+          "20240728011206-portfolio---cloudflare-local-issues"
         ],
         "cloudflare": {
           "pages": [
             "20240724204239-portfolio-hosting---cloudflare-down"
+          ],
+          "wrangler": [
+            "20240728011206-portfolio---cloudflare-local-issues"
           ]
         },
         "astro": [

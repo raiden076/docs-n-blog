@@ -3,7 +3,7 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'All my notes and a few blog',
+  title: "Arkapravo's notes and blog",
   tagline: 'Because? #open_source_everything',
   favicon: 'img/favicon.ico',
   markdown: {
