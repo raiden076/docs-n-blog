@@ -18,5 +18,4 @@ These should be enough, to start and continue the blog.
 
 - [ ] Read more on the blogs: technicalities from docusaurus docs, [here](https://docusaurus.io/docs/blog)
 - [ ] Write the first blog from the topics already in notes, don't start a brand new topic
-- [ ] Change the landing page heading and subheading font color to match that of the portfolio, that's very sweet
-- [ ] 
+- [x] Change the landing page heading and subheading font color to match that of the portfolio, that's very sweet ✅ 2024-07-29

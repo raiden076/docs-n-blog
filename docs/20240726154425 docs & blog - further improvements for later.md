@@ -9,9 +9,10 @@ id: 20240726154425-docs-&-blog---further-improvements-for-later
 2. [ ] plan out and read more about blogs
 3. [ ] write some blogs at least
 4. [ ] remove test blogs
-5. [ ] Add mail - contact me in more
+5. [x] Add mail - contact me in more ✅ 2024-07-29
 6. [x] change the sub heading and heading colours for blog-note landing page 🔺 ✅ 2024-07-28
-7. [ ] 
+7. [ ] Add sidebar navigators ([docs sidebar generated index](https://docusaurus.io/docs/sidebar/items#embedding-generated-index-in-doc-page))
+8. [x] markdown mode md to detect to use mdx features ✅ 2024-07-29
 
 
 Continued from [docs & blog - immediate improvements can be made](/note/20240726010711-docs-&-blog---immediate-improvements-can-be-made) and [docs & blog - Docusaurus setup - initial finalization](/note/20240725024232-docs-&-blog---docusaurus-setup---initial-finalization)

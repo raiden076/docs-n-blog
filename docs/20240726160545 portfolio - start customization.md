@@ -11,8 +11,8 @@ id: 20240726160545-portfolio---start-customization
 2. [ ] then add other resume elements to (catch) recruiters
 3. [ ] then start one project, something too easy (test proj)
 4. [ ] in the home page instead of, Home/ posts, it should be home/ projects 
-5. [ ] modify hobbies (remove the to, before cyberpunk theme)
+5. [x] modify hobbies (remove the to, before cyberpunk theme) ✅ 2024-07-29
 6. [ ] understand the whole existing structure, including components, and their uses, then start rebuilding 🔺 
-7. [ ] there isn't much prebuilt, unlike docusaurus, so don't hesitate to break, too many things
+7. [x] there isn't much prebuilt, unlike docusaurus, so don't hesitate to break, too many things ✅ 2024-07-29
 8. [ ] read about astro server actions, and the validation part most importantly
-9. [ ] decrease yellow saturation a bit
+9. [x] decrease yellow saturation a bit ✅ 2024-07-29
