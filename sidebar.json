@@ -7,13 +7,13 @@
             "docs-n-blog": [
               "20240722005751-gpt-on-docusaurus-sidebar-plugin",
               "20240722213731-docusaurus-plugin---what-it-needs-to-do",
-              "20240723003043-docusaurus-plugin---an-even-better-plan",
               "20240723122006-docusaurus-plugin---an-even-better-plan-ctd",
-              "20240724133308-tagmap-and-enhanced-sidebar",
               "20240725024232-docs-&-blog---docusaurus-setup---initial-finalization",
+              "20240724133308-tagmap-and-enhanced-sidebar",
+              "20240723003043-docusaurus-plugin---an-even-better-plan",
               "20240726010711-docs-&-blog---immediate-improvements-can-be-made",
-              "20240726154425-docs-&-blog---further-improvements-for-later",
               "20240726154455-docs-&-blog---sidebar-style-change",
+              "20240726154425-docs-&-blog---further-improvements-for-later",
               "20240726225657-docs-&-blog---updated-sync-script",
               "20240727134539-docs-&-blog---last-things",
               "20240802233245-portfolio---overall-improvements-for-future"
@@ -22,8 +22,8 @@
           "20240724204239-portfolio-hosting---cloudflare-down",
           "20240726160545-portfolio---start-customization",
           "20240728011206-portfolio---cloudflare-local-issues",
-          "20240730200309-portfolio---organizing-projects",
-          "20240802233245-portfolio---overall-improvements-for-future"
+          "20240802233245-portfolio---overall-improvements-for-future",
+          "20240730200309-portfolio---organizing-projects"
         ],
         "cloudflare": {
           "pages": [
@@ -45,19 +45,19 @@
           "20240722005751-gpt-on-docusaurus-sidebar-plugin",
           "20240722144345-integration-of-docusaurus-and-obsidian-vault",
           "20240722213731-docusaurus-plugin---what-it-needs-to-do",
-          "20240723003043-docusaurus-plugin---an-even-better-plan",
           "20240723122006-docusaurus-plugin---an-even-better-plan-ctd",
+          "20240725024232-docs-&-blog---docusaurus-setup---initial-finalization",
           "20240724133308-tagmap-and-enhanced-sidebar",
-          "20240725024232-docs-&-blog---docusaurus-setup---initial-finalization"
+          "20240723003043-docusaurus-plugin---an-even-better-plan"
         ],
         "sidebar": [
           "20240722005751-gpt-on-docusaurus-sidebar-plugin",
           "20240722144345-integration-of-docusaurus-and-obsidian-vault",
           "20240722160139-docs-sidebar---what-to-do",
           "20240722213731-docusaurus-plugin---what-it-needs-to-do",
-          "20240723003043-docusaurus-plugin---an-even-better-plan",
           "20240723122006-docusaurus-plugin---an-even-better-plan-ctd",
           "20240724133308-tagmap-and-enhanced-sidebar",
+          "20240723003043-docusaurus-plugin---an-even-better-plan",
           "20240726154455-docs-&-blog---sidebar-style-change"
         ]
       },
