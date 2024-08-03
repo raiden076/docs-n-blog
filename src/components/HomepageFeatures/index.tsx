@@ -38,7 +38,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_applications_mqwk.svg').default,
     description: (
       <>
-        <Link to={'https://arkaprav0.in'}>Here</Link>, is my main portfolio. Check it out, <Link to={'https://arkaprav0.in'}>
+        <Link to={'https://arkaprav0.in'}>Here</Link>, is my main portfolio. Check it out, <Link to={'https://arkaprav0.in/projects'}>
           you may also find other projects I have worked on.
         </Link>
       </>
