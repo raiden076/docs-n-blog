@@ -3,6 +3,7 @@ tags:
   - college
   - math
   - stat
+  - college/foundation/test_prep
 title: college - math2 stat2 gist
 slug: 20240730163110-college---math2-stat2-gist
 id: 20240730163110-college---math2-stat2-gist
@@ -15,7 +16,8 @@ So, thing is, your syllabus is divided as follows:
 
 Week 1-4: It's basically matrices. The very basic stuff all 11 th-12 th syllabi have.
 
-What are matrices, addition, multiplication, elementary row transformation (here it is Gaussian elimination), adjoint matrices, determinants and stuff.
+What are matrices, addition,
+multiplication, elementary row transformation (here it is Gaussian elimination), adjoint matrices, determinants and stuff.
 
 So, matrix manipulation is the end goal.
 
