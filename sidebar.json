@@ -5,100 +5,96 @@
         "portfolio": [
           {
             "docs-n-blog": [
+              "20240725024232-docs-&-blog---docusaurus-setup---initial-finalization",
+              "20240727134539-docs-&-blog---last-things",
+              "20240726154425-docs-&-blog---further-improvements-for-later",
+              "20240802233245-portfolio---overall-improvements-for-future---aggregated",
               "20240722005751-gpt-on-docusaurus-sidebar-plugin",
-              "20240722213731-docusaurus-plugin---what-it-needs-to-do",
+              "20240726154455-docs-&-blog---sidebar-style-change",
               "20240723003043-docusaurus-plugin---an-even-better-plan",
+              "20240726010711-docs-&-blog---immediate-improvements-can-be-made",
+              "20240722213731-docusaurus-plugin---what-it-needs-to-do",
               "20240723122006-docusaurus-plugin---an-even-better-plan-ctd",
               "20240724133308-tagmap-and-enhanced-sidebar",
-              "20240725024232-docs-&-blog---docusaurus-setup---initial-finalization",
-              "20240726010711-docs-&-blog---immediate-improvements-can-be-made",
-              "20240726154425-docs-&-blog---further-improvements-for-later",
-              "20240726154455-docs-&-blog---sidebar-style-change",
-              "20240726225657-docs-&-blog---updated-sync-script",
-              "20240727134539-docs-&-blog---last-things",
-              "20240802233245-portfolio---overall-improvements-for-future---aggregated"
+              "20240726225657-docs-&-blog---updated-sync-script"
             ]
           },
-          "20240724204239-portfolio-hosting---cloudflare-down",
           "20240726160545-portfolio---start-customization",
+          "20240802233245-portfolio---overall-improvements-for-future---aggregated",
           "20240728011206-portfolio---cloudflare-local-issues",
           "20240730200309-portfolio---organizing-projects",
-          "20240802233245-portfolio---overall-improvements-for-future---aggregated"
+          "20240724204239-portfolio-hosting---cloudflare-down"
         ],
-        "cloudflare": {
-          "pages": [
-            "20240724204239-portfolio-hosting---cloudflare-down"
-          ],
-          "wrangler": [
-            "20240728011206-portfolio---cloudflare-local-issues"
-          ]
-        },
         "astro": [
           "20240726160545-portfolio---start-customization",
           "20240730200309-portfolio---organizing-projects"
-        ]
+        ],
+        "cloudflare": {
+          "wrangler": [
+            "20240728011206-portfolio---cloudflare-local-issues"
+          ],
+          "pages": [
+            "20240724204239-portfolio-hosting---cloudflare-down"
+          ]
+        }
       }
     },
     "docusaurus": [
       {
         "plugin": [
+          "20240725024232-docs-&-blog---docusaurus-setup---initial-finalization",
           "20240722005751-gpt-on-docusaurus-sidebar-plugin",
-          "20240722144345-integration-of-docusaurus-and-obsidian-vault",
-          "20240722213731-docusaurus-plugin---what-it-needs-to-do",
           "20240723003043-docusaurus-plugin---an-even-better-plan",
+          "20240722213731-docusaurus-plugin---what-it-needs-to-do",
+          "20240722144345-integration-of-docusaurus-and-obsidian-vault",
           "20240723122006-docusaurus-plugin---an-even-better-plan-ctd",
-          "20240724133308-tagmap-and-enhanced-sidebar",
-          "20240725024232-docs-&-blog---docusaurus-setup---initial-finalization"
+          "20240724133308-tagmap-and-enhanced-sidebar"
+        ],
+        "blog": [
+          "20240727134539-docs-&-blog---last-things"
         ],
         "sidebar": [
           "20240722005751-gpt-on-docusaurus-sidebar-plugin",
+          "20240726154455-docs-&-blog---sidebar-style-change",
+          "20240723003043-docusaurus-plugin---an-even-better-plan",
+          "20240722213731-docusaurus-plugin---what-it-needs-to-do",
           "20240722144345-integration-of-docusaurus-and-obsidian-vault",
           "20240722160139-docs-sidebar---what-to-do",
-          "20240722213731-docusaurus-plugin---what-it-needs-to-do",
-          "20240723003043-docusaurus-plugin---an-even-better-plan",
           "20240723122006-docusaurus-plugin---an-even-better-plan-ctd",
-          "20240724133308-tagmap-and-enhanced-sidebar",
-          "20240726154455-docs-&-blog---sidebar-style-change"
+          "20240724133308-tagmap-and-enhanced-sidebar"
         ]
       },
       "20240726225657-docs-&-blog---updated-sync-script"
     ],
+    "college": [
+      "20240730163110-college---math2-stat2-gist",
+      "20240729160257-determinants---analogy-and-linear-transformations",
+      "20240729132036-matrices---intro"
+    ],
+    "math": [
+      "20240730163110-college---math2-stat2-gist"
+    ],
+    "stat": [
+      "20240730163110-college---math2-stat2-gist"
+    ],
+    "future": [
+      "20240804024626-portfolio---project-ideas"
+    ],
     "by_ai": [
+      "20240806153629-project---dynamic-proxy",
       "20240722005751-gpt-on-docusaurus-sidebar-plugin",
-      "20240726225657-docs-&-blog---updated-sync-script",
+      "20240729160257-determinants---analogy-and-linear-transformations",
       "20240729132036-matrices---intro",
-      "20240729160257-determinants---analogy-and-linear-transformations"
+      "20240726225657-docs-&-blog---updated-sync-script"
+    ],
+    "a-0-begin-here": [
+      "20240725141633-why---when---how"
     ],
     "obsidian": {
       "tags": [
         "20240722144345-integration-of-docusaurus-and-obsidian-vault",
         "20240722160139-docs-sidebar---what-to-do"
       ]
-    },
-    "a-0-begin-here": [
-      "20240725141633-why---when---how"
-    ],
-    "math": [
-      {
-        "matrix": [
-          "20240729132036-matrices---intro"
-        ],
-        "determinants": [
-          "20240729160257-determinants---analogy-and-linear-transformations"
-        ],
-        "linear_transformation": [
-          "20240729160257-determinants---analogy-and-linear-transformations"
-        ]
-      },
-      "20240730163110-college---math2-stat2-gist"
-    ],
-    "college": [
-      "20240729132036-matrices---intro",
-      "20240729160257-determinants---analogy-and-linear-transformations",
-      "20240730163110-college---math2-stat2-gist"
-    ],
-    "stat": [
-      "20240730163110-college---math2-stat2-gist"
-    ]
+    }
   }
 }
